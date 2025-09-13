@@ -21,5 +21,6 @@ HackLab is a web-based computer simulation inspired by the book _Nand to Tetris_
 - ShadCN: UI library
 - Svelte Flow: diagram flow package
 - Lucide Svelte: icon library
+- Tailwind CSS
 
 ## Coding Style

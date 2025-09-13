@@ -8,6 +8,16 @@ HackLab is a web-based computer simulation inspired by the book _Nand to Tetris_
 - **Exploration mode**: click on any block to reveal its implementation, either in HDL (Hardware Description Language) or basic logic composition.
 - **Interactive simulation**: design or replicate components, run them, and verify against specifications.
 - **Hack language support**: load and execute programs written in Hack assembly, and run higher-level Jack code.
-- **Educational focus**: bridges theoretical computer science with hands-on practice, showing the full path from _bit_ to _operating system_.
+- **Educational focus**: bridges theoretical computer science with hands-on practice, showing the full path from _bit_ to _computer_.
 
-HackLab makes learning computer architecture tangible through direct exploration, experimentation, and visualization.
+## Tech Stack
+
+- SvelteKit
+- ShadCN: UI library
+- Svelte Flow: diagram flow package
+- Lucide Svelte: icon library
+- Tailwind CSS
+
+## Demo
+
+_To be defined_
