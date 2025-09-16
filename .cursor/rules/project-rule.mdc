@@ -17,10 +17,14 @@ HackLab is a web-based computer simulation inspired by the book _Nand to Tetris_
 
 ## Tech Stack
 
-- SvelteKit
+- Svelte 5
+- SvelteKit 5
 - ShadCN: UI library
 - Svelte Flow: diagram flow package
 - Lucide Svelte: icon library
 - Tailwind CSS
 
 ## Coding Style
+
+- Each folder should contain a single component.
+- Always re-export the component as a named export from an `index.ts` file in the same folder.
