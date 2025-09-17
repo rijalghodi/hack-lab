@@ -2,7 +2,7 @@
   import { Button } from '$lib/components/ui/button';
   import github from '$lib/images/github.svg';
   import svelteLogo from '$lib/images/svelte-logo.svg';
-  import { Cpu, Eye, Settings, Code, BookOpen, Monitor, Play } from '@lucide/svelte';
+  import { Cpu, Eye, Settings, Code, BookOpen, Monitor, Play, Github } from '@lucide/svelte';
 </script>
 
 <!-- Header Section -->
@@ -13,15 +13,15 @@
     <div class="flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center space-x-2">
-        <img src={svelteLogo} alt="HackLab" class="h-8 w-8" />
-        <span class="text-2xl font-bold text-foreground">HackLab</span>
+        <!-- <img src={svelteLogo} alt="HackLab" class="h-8 w-8" /> -->
+        <span class="font-mono text-xl font-bold text-foreground">HackLab</span>
       </div>
 
       <!-- Navigation -->
       <nav class="flex items-center space-x-4">
         <Button variant="outline" href="/lab">Enter Lab</Button>
-        <Button variant="ghost" size="icon" href="https://github.com/your-username/hack-lab">
-          <img src={github} alt="GitHub" class="h-5 w-5" />
+        <Button variant="outline" size="icon" href="https://github.com/your-username/hack-lab">
+          <Github class="h-5 w-5" />
         </Button>
       </nav>
     </div>
@@ -47,10 +47,8 @@
         </div>
 
         <div class="flex flex-col gap-4 sm:flex-row">
-          <Button size="lg" href="/lab" class="px-8 py-6 text-lg">Start Building</Button>
-          <Button variant="outline" size="lg" href="#features" class="px-8 py-6 text-lg">
-            Learn More
-          </Button>
+          <Button size="lg" href="/lab">Start Building</Button>
+          <Button variant="outline" size="lg" href="#features">Learn More</Button>
         </div>
       </div>
 
@@ -190,7 +188,7 @@
         Join thousands of students learning computer architecture through interactive simulation.
       </p>
       <div class="flex flex-col justify-center gap-4 sm:flex-row">
-        <Button size="lg" href="/lab" class="px-8 py-6 text-lg">Start Building Now</Button>
+        <Button size="lg" href="/lab">Start Building Now</Button>
       </div>
     </div>
   </div>

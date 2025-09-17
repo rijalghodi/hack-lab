@@ -12,7 +12,7 @@
   />
 </svelte:head>
 
-<div class="app dark">
+<div class="app">
   <main>
     {@render children()}
   </main>

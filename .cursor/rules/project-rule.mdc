@@ -28,3 +28,4 @@ HackLab is a web-based computer simulation inspired by the book _Nand to Tetris_
 
 - Each folder should contain a single component.
 - Always re-export the component as a named export from an `index.ts` file in the same folder.
+- Always use tailwind css if it is possible. And always use shadCN color defined in /src/app.css such as text-foreground, bg-muted, etc.

@@ -80,7 +80,7 @@
         source: sourceNodeId,
         target: id,
         id: `${sourceNodeId}--${id}`,
-        type: 'smoothstep'
+        type: 'wire'
       }
     ];
   };
@@ -95,7 +95,7 @@
   onconnectend={handleConnectEnd}
   colorMode="dark"
   defaultEdgeOptions={{
-    type: 'smoothstep'
+    type: 'wire'
   }}
 >
   <Background />

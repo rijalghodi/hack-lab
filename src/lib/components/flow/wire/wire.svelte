@@ -1,24 +1,20 @@
 <script lang="ts">
-  import { BaseEdge, getSmoothStepPath, type EdgeProps, Position } from '@xyflow/svelte';
-  let {
-    sourceX,
-    sourceY,
-    targetX,
-    targetY,
-    sourcePosition = Position.Right,
-    targetPosition = Position.Left
-  }: EdgeProps = $props();
+  import { BaseEdge, getBezierPath, type EdgeProps } from '@xyflow/svelte';
 
-  // 20px radius for the corners
-  let [edgePath] = getSmoothStepPath({
-    sourceX,
-    sourceY,
-    sourcePosition,
-    targetX,
-    targetY,
-    targetPosition,
-    borderRadius: 20 // Adjust for more or less rounded corners
-  });
+  let { sourceX, sourceY, targetX, targetY, ...props }: EdgeProps = $props();
+
+  const [edgePath] = $derived(
+    getBezierPath({
+      sourceX,
+      sourceY,
+      targetX,
+      targetY
+    })
+  );
+
+  $inspect(edgePath);
+
+  const { markerStart, markerEnd, interactionWidth, label, labelStyle } = props;
 </script>
 
-<BaseEdge path={edgePath} />
+<BaseEdge path={edgePath} {markerStart} {markerEnd} {interactionWidth} {label} {labelStyle} />
