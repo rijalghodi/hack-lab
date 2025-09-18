@@ -94,6 +94,7 @@
   {edgeTypes}
   onconnectend={handleConnectEnd}
   colorMode="dark"
+  snapGrid={[10, 10]}
   defaultEdgeOptions={{
     type: 'wire'
   }}
